@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+h2 , h3{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+header p{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+header{
+    background-image: url("images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(193, 100%, 96%);
+    padding: 40px 0px;
+}
+.container{
+    width: 1000px;
+    max-width: 100%;
+    padding: 0px 20px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.box{
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    margin: 40px 0px;
+    padding: 60px;
+    z-index: 1 ;
+    background-color: white;
+    border-radius: 20px;
+}
+.box img{
+    width: 80%;
+}
+.flex > div{
+    flex: 1;
+}
+.small-box{
+    display: inline-block;
+    padding: 50px 100px;
+}
+.center{
+    text-align: center;
+}
+.small-box h2{
+    margin-bottom: 15px;
+}
+.btn{
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.btn-white{
+    background-color: white;
+    border: 2px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+.btn-white:hover{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+.btn-pink{
+    background-color: hsl(322, 100%, 66%);
+    border: 2px solid hsl(322, 100%, 66%);
+    color: white;
+}
+.btn-pink:hover{
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+}
+.btn-big{
+    padding: 15px 80px;
+}
+footer{
+    z-index: -1;
+    margin-top: -120px;
+    padding: 150px;
+    color: hsl(208, 11%, 55%);
+    background-color: hsl(192, 100%, 9%);
+}
+.flex-footer{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 20px;
+}
+p{
+    margin-bottom : 15px ;
+}
+.info img{
+    margin-right: 10px;
+}
+.location{
+    display: flex;
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+.location img{
+    height: 23px;
+    width: 25px;
+}
+.location span{
+    display: inline-block;
+}
+.phone{
+    margin-left: -6px;
+    margin-bottom : 15px;
+}
+.email{
+    margin-left: -6px;
+    margin-bottom : 20px ;
+}
+.social-media a{
+    text-decoration: none;
+}
+.fa{
+    padding: 7px 7px;
+    border-radius: 100%;
+    border: 2px solid white;
+    margin-right: 10px;
+    color: white;
+}
+.fa-facebook{
+    padding: 7px 10px;
+}
+
+.copyright{
+    text-align: right;
+}
+@media only screen and (max-width : 700px){
+    .flex , .flex-footer{
+        flex-direction: column;
+    }
+    .container{
+        text-align: center;
+    }
+    nav{
+        align-items: center;
+    }
+    nav img{
+        width: 30%;
+    }
+    .btn{
+        font-size: 0.7rem;
+    }
+
+    header h2{
+        width: 60%;
+        margin: 30px auto;
+    }
+    header p{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    header .btn-pink{
+        margin-bottom: 55px;
+        width: 60%;
+        padding-top: 15px;        
+        padding-bottom: 15px;        
+
+    }    
+    .header-image{
+        width: 85%;
+    }
+    .box-1{
+        flex-direction: column-reverse;
+    }
+    .box img{
+        margin-bottom: 30px;
+    }
+    .box p{
+        color: grey;
+    }
+    .small-box{
+        padding: 50px 15px;
+    }
+    footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer-image{
+        margin-bottom: 30px;
+    }
+    .phone{
+        margin-left: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .email{
+        margin-left: 0;
+    }
+    .footer-div{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .social-media{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .copyright{
+        margin-top: 30px;
+        text-align: center;
+    }
+}
